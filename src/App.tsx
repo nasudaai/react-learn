@@ -6,10 +6,19 @@ function MyButton() {
   );
 }
 
+const user = {
+  name: 'ume',
+  line: 'boshiboshi',
+}
+
 export default function App() {
   return (
     <div>
-      <h1>React Page</h1>
+      <h1>{user.name}</h1>
+      <h2>lines</h2>
+      <ul>
+        <li>{user.line}</li>
+      </ul>
       <MyButton />
     </div>
   )
